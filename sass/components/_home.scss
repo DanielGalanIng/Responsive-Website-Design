@@ -1,0 +1,32 @@
+.home {
+    &__container {
+        height: calc(100vh - var(--header-height));
+        align-content: center;
+    }
+    &__title {
+        font-size: $biggest-font-size;
+        color: $first-color;
+        margin-bottom: $mb-1;
+    }
+    &__subtitle {
+        font-size: $h1-font-size;
+        color: $title-color;
+        margin-bottom: $mb-4;
+    }
+    &__img {
+        width: 300px;
+        justify-self: center;
+    }
+}
+
+.button {
+    display: inline-block;
+    background-color: $first-color;
+    color: #fff;
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    transition: 300ms;
+    &:hover {
+        background-color: $first-color-alt;
+    }
+}

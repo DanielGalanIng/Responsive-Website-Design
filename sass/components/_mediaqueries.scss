@@ -1,0 +1,100 @@
+@include media(tablet-s) {
+    .home, .about, .app {
+        &__container {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
+    }
+    .about, .app {
+        &__data, &__initial {
+            text-align: initial;
+        }
+    }
+    .contact {
+        &__container, &__initial {
+            text-align: initial;
+        }
+    }
+    .about, .app {
+        &__img {
+            width: 380px;
+            order: -1;
+        }
+    }
+    .contact {
+        &__container {
+            grid-template-columns: 1.75fr 1fr;
+            align-items: center;
+        }
+        &__button {
+            align-self: center;
+        }
+    }
+}
+
+@include media(tablet) {
+    body {
+        margin: 0;
+    }
+    .section {
+        padding-top: 8rem;
+    }
+    .nav {
+        height: calc(var(--header-height) + 1.5rem);
+        &__list {
+            display: flex;
+        }
+        &__item {
+            margin-left: $mb-5;
+            margin-bottom: 0;
+        }
+        &__toggle {
+            display: none;
+        }
+    }
+    .home {
+        &__container {
+            height: 100vh;
+            justify-content: center;
+        } 
+    }
+    .services, .menu {
+        &__container {
+            margin-top: $mb-6;
+        }        
+    }
+    .menu {
+        &__container {
+            grid-template-columns: repeat(3, 210px);
+            column-gap: 4rem;
+        }
+        &__content {
+            padding: 1.5rem;
+        }
+        &__img {
+            width: 130px;
+        }
+    }
+    .app {
+        &__store {
+            margin: 0 $mb-1 0 0;
+        }
+    }
+}
+
+@include media(desktop-s) {
+    .bd-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home {
+        &__img {
+            width: 500px;
+        }
+    }
+    .about, .app {
+        &__container {
+            column-gap: 7rem;
+        }
+    }
+}

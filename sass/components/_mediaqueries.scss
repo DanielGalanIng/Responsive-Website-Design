@@ -52,6 +52,12 @@
             display: none;
         }
     }
+
+    .change-theme {
+        position: initial;
+        margin-left: $mb-2;
+    }
+
     .home {
         &__container {
             height: 100vh;

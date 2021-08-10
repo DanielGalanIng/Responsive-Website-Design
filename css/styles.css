@@ -76,6 +76,25 @@ img {
   height: auto;
 }
 
+body.dark-theme {
+  --title-color: #F1F3F2;
+  --text-color: #C7D1CC;
+  --body-color: #1D2521;
+  --container-color: #27302C;
+}
+
+.change-theme {
+  position: absolute;
+  right: 1rem;
+  top: 1.8rem;
+  color: var(--text-color);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.change-theme:hover {
+  color: var(--first-color);
+}
+
 .section {
   padding: 4rem 0 2rem;
 }
@@ -416,6 +435,11 @@ img {
   }
   .nav__toggle {
     display: none;
+  }
+
+  .change-theme {
+    position: initial;
+    margin-left: var(--mb-2);
   }
 
   .home__container {
